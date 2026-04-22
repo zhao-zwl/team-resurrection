@@ -1,3 +1,13 @@
+---
+name: team-resurrection
+description: 通用一键搬家技能包，支持完整迁移 OpenClaw 多 Agent 团队。换电脑 / 重装系统后一键复活整个团队。
+metadata:
+  openclaw:
+    requires:
+      bins: []
+    install: []
+---
+
 # 一键搬家Skill（Team Resurrection）
 
 > **通用的一键搬家技能包** v2.0。支持多Agent团队的完整迁移：打包 → 搬家 → 复活。

@@ -1,29 +1,45 @@
-# Team Resurrection（团队复活 / 一键搬家）
+# Team Resurrection
 
-> 通用的一键搬家 Skill，支持完整迁移 OpenClaw 多 Agent 团队。
+**OpenClaw 多 Agent 团队一键搬家技能包。**
 
-## 功能
+换电脑 / 重装系统后，将整个团队打包带走，一键复活。
 
-- **打包**（pack.py）：将当前 Agent 团队的完整配置打包为压缩包
-- **迁移**（migrate.py）：在新环境中解压并恢复团队配置
-- 支持：SOUL.md、SKILL.md、cron 任务、openclaw agents 配置
+---
 
-## 适用场景
+## 特性
 
-- 换电脑 / 重装系统
-- 迁移团队到新设备
-- 备份团队配置
+- **零门槛**：一条命令完成打包/迁移
+- **安全优先**：自动备份，配置合并不覆盖
+- **通用适配**：支持 Main Agent + 任意数量子代理
+- **跨平台**：Mac / Windows / Linux 均可用
 
-## 使用方式
+## 快速开始
 
-1. **打包**：`python3 pack.py` → 生成搬家包
-2. **迁移**：`python3 migrate.py` → 按提示操作
+### 打包（旧环境）
 
-## 文档
+```
+python3 pack.py
+```
 
-- [SKILL.md](./SKILL.md) — 完整使用说明
-- [MATERIAL_PACKING.md](./MATERIAL_PACKING.md) — 打包材料清单
+生成搬家压缩包，复制到新环境。
+
+### 迁移（新环境）
+
+```
+python3 migrate.py
+```
+
+按提示完成恢复，全程引导式。
+
+## 完整文档
+
+| 文件 | 说明 |
+|------|------|
+| [SKILL.md](./SKILL.md) | 完整使用说明 |
+| [examples/README.md](./examples/) | 使用场景示例 |
+| [templates/](./templates/) | 打包/迁移模板 |
+| [MATERIAL_PACKING.md](./MATERIAL_PACKING.md) | 打包材料清单 |
 
 ## 版本
 
-v2.0 — 自动备份、配置合并（不覆盖）、通用 workspace 检测
+- v1.0.0（2026-04-22）— 首发
